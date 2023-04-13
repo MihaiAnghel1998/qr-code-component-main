@@ -1,0 +1,99 @@
+:root {
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Gray: hsl(212, 45%, 89%);
+  --clr-Blue: hsl(220, 15%, 55%);
+  --clr-Dark-Blue: hsl(218, 44%, 22%);
+
+  --fs-only: 0.938rem;
+
+  --ff-only: 'Outfit', sans-serif;
+
+  --fw--normal: 400;
+  --fw--bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-only);
+  background-color: var(--clr-Gray);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 600px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.QR__CARD {
+  background-color: var(--clr-White);
+  display: grid;
+  padding: 1rem;
+  border-radius: 2rem;
+  gap: 2rem;
+  place-items: center;
+  overflow: hidden;
+}
+
+@media (max-width:600px) {
+  .QR__CARD {
+    min-width: 40rem;
+    margin: 1rem;
+    position:fixed;
+
+
+  }
+}
+.QR {
+  width: 27rem;
+  height: 27rem;
+  border-radius: 1rem;
+}
+
+.QR__TITLE {
+  width: 25rem;
+  color: var(--clr-Dark-Blue);
+}
+
+.QR_SUB{
+  width: 17rem;
+  text-align: center;
+  margin-left: 4rem;
+  color:var(--clr-Blue);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+
+}
+
